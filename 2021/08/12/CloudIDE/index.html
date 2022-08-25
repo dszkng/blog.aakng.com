@@ -9,7 +9,7 @@
     
     <title>
         
-            中台微服务架构系列 |
+            CloudIDE |
         
         奇谈
     </title>
@@ -176,7 +176,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">中台微服务架构系列</span>
+            <span class="title-hover-animation">CloudIDE</span>
         </div>
 
         
@@ -188,54 +188,24 @@
                     <div class="author">
                         <span class="name">dszkng</span>
                         
-                            <span class="author-label">Lv1</span>
+                            <span class="author-label">Lv2</span>
                         
                     </div>
                     <div class="meta-info">
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-08-12 18:16:27</span>
-        <span class="mobile">2022-08-12 18:16</span>
+        <span class="pc">2021-08-12 19:57:14</span>
+        <span class="mobile">2021-08-12 19:57</span>
     </span>
     
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fas fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">系统设计</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
 
     
     
-        <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>787 Words</span>
-        </span>
-    
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>2 Mins</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
         </span>
     
     
@@ -247,70 +217,18 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前我在公司中台部门下面的一个业务侧组从事开发工作，因为老板是带着一定的技术愿景去管理中台部门的，所以我们所经手的项目，从立项伊始都是完完全全被要求按照中台标准去融入中台体系，按照微服务架构设计和编码的。</p>
-<blockquote>
-<p>我司的中台可以理解成一个整合了研发管理工具、DevOps、应用&#x2F;服务市场的一个平台。</p>
-</blockquote>
-<p>在日常开发项目中，有遇到中台一些很奇葩的使用问题，也看到中台不断修bug，改设计，改功能，引入技术外债，忽略稳定性，不经思索中台到底要做成什么个样子？难道能稳定支撑业务侧不比加功能重要吗，抛开这么些质疑，其实冷静下来会发现中台这个黑盒的背后，有的设计还是很有意思的，中台本质就是一个微服务和服务治理的落地实践，和网上各种的微服务架构的方案也是大相径庭，这个也让想掌握微服务设计的我很有启发，倒不如抱着学习的态度去研究一下。</p>
-<p>主要是想通过这个系列文章来记录一下这段时间的一个学习历程。因为好记性不如烂笔头，相比这边学一块，那边写一块，系统的分析确实更能加深记忆。</p>
-<p>微服务是个大而全的架构，包含的知识面很大，也有很多深入的部分，在这套架构的实际落地中，都是好几个团队共同完成的，当然不可能是三言两句能讲清楚的，受限于知识的深度，我只是皮毛层面去研究一下这套方案是怎么设计的？为什么这么设计？有没有更好的设计？…</p>
-<p>后面文字的言语表达，偏向于白话，不仅是为了通俗易懂描述问题的现象、背景和解决方案。（主要还是因为表达能力不行哈哈）</p>
-<h1 id="一、基础篇"><a href="#一、基础篇" class="headerlink" title="一、基础篇"></a>一、基础篇</h1><ol>
-<li><a class="link"   target="_blank" rel="noopener" href="https://note.youdao.com/s/bGQCf5SS" >微服务架构的产生背景<i class="fas fa-external-link-alt"></i></a></li>
-<li>微服务架构的发展史</li>
-</ol>
-<h1 id="二、设计篇"><a href="#二、设计篇" class="headerlink" title="二、设计篇"></a>二、设计篇</h1><h2 id="我司中台微服务方案整体分析"><a href="#我司中台微服务方案整体分析" class="headerlink" title="我司中台微服务方案整体分析"></a>我司中台微服务方案整体分析</h2><ol>
-<li><a class="link"   target="_blank" rel="noopener" href="https://note.youdao.com/s/ATIv44aI" >中台微服务架构是怎么设计的？<i class="fas fa-external-link-alt"></i></a></li>
-<li><a class="link"   target="_blank" rel="noopener" href="https://note.youdao.com/s/USqZYfK9" >中台基础服务是怎么设计的？<i class="fas fa-external-link-alt"></i></a></li>
-<li>中台微服务方案的总结</li>
-</ol>
-<h2 id="微服务关键技术选型和难点分析"><a href="#微服务关键技术选型和难点分析" class="headerlink" title="微服务关键技术选型和难点分析"></a>微服务关键技术选型和难点分析</h2><p>技术组件选型：</p>
-<ol>
-<li>RPC框架</li>
-<li>网关</li>
-<li>注册中心</li>
-<li>配置中心</li>
-<li>本地缓存和分布式缓存</li>
-<li>日志</li>
-<li>任务调度</li>
-<li>异步消息</li>
-<li>对象存储和分布式存储</li>
-<li>关系型数据库</li>
-<li>分布式事务</li>
-<li>服务治理相关</li>
-<li>…</li>
-</ol>
-<p>服务拆分相关：</p>
-<ul>
-<li>怎么根据业务去切分服务？</li>
-</ul>
-<p>其他：</p>
-<ul>
-<li>开发语言和框架的选择</li>
-</ul>
-<h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>通用功能设计：</p>
-<ol>
-<li>访问控制系统设计</li>
-<li>单点登录系统设计</li>
-</ol>
-<h1 id="三、实现篇"><a href="#三、实现篇" class="headerlink" title="三、实现篇"></a>三、实现篇</h1><p>todo</p>
-<h1 id="四、总结篇"><a href="#四、总结篇" class="headerlink" title="四、总结篇"></a>四、总结篇</h1><ol>
-<li>微服务架构的特点</li>
-<li>微服务架构的优缺点</li>
-<li>…</li>
-</ol>
-
+            
         </div>
 
         
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：中台微服务架构系列</li>
+        <li>Post title：CloudIDE</li>
         <li>Post author：dszkng</li>
-        <li>Create time：2022-08-12 18:16:27</li>
+        <li>Create time：2021-08-12 19:57:14</li>
         <li>
-            Post link：https://blog.aakng.com/2022/08/12/Untitled/
+            Post link：https://blog.aakng.com/2021/08/12/CloudIDE/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -322,30 +240,33 @@
         
 
         
-            <ul class="post-tags-box">
-                
-                    <li class="tag-item">
-                        <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">#微服务</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">#系统设计</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
 
         
             <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/04/06/Untitled/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">中台微服务架构系列</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
                 
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/04/06/hello-world/"
+                           href="/2021/04/14/ssh%E4%BB%A3%E7%90%86/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">ssh代理</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -458,7 +379,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E7%A1%80%E7%AF%87"><span class="nav-number">2.</span> <span class="nav-text">一、基础篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%AE%BE%E8%AE%A1%E7%AF%87"><span class="nav-number">3.</span> <span class="nav-text">二、设计篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E5%8F%B8%E4%B8%AD%E5%8F%B0%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%96%B9%E6%A1%88%E6%95%B4%E4%BD%93%E5%88%86%E6%9E%90"><span class="nav-number">3.1.</span> <span class="nav-text">我司中台微服务方案整体分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B%E5%92%8C%E9%9A%BE%E7%82%B9%E5%88%86%E6%9E%90"><span class="nav-number">3.2.</span> <span class="nav-text">微服务关键技术选型和难点分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1"><span class="nav-number">3.3.</span> <span class="nav-text">系统设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E7%8E%B0%E7%AF%87"><span class="nav-number">4.</span> <span class="nav-text">三、实现篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E7%AF%87"><span class="nav-number">5.</span> <span class="nav-text">四、总结篇</span></a></li></ol>
+        
     </div>
 </div>
         </aside>
